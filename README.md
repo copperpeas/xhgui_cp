@@ -380,11 +380,14 @@ xhgui
 
 一个基于MongoDB的,为XHProf而生的图形接口.
 
-这个工具下列三个软件之一已经安装:
+XHGui需要下列三个软件之一已经安装:
 
-[XHProf](http://pecl.php.net/package/xhprof)  或者它的其中一个分支:
-[Uprofiler](https://github.com/FriendsOfPHP/uprofiler);
-[Tideways](https://github.com/tideways/php-profiler-extension)
+1.[XHProf](http://pecl.php.net/package/xhprof)  或者它的其中一个分支:
+
+2.[Uprofiler](https://github.com/FriendsOfPHP/uprofiler);或者
+
+3.[Tideways](https://github.com/tideways/php-profiler-extension)
+
 XHProf是一个用来记录和提供性能优化数据(profiling data)的PHP Extension.
 XHGui(这个工具)获得profiling data 并保存在MongoDB并提供一个随数据而生的方便的GUI.
 
