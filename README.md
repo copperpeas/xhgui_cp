@@ -470,7 +470,8 @@ Installation
 
 8. Set up your webserver. The Configuration section below describes how
    to setup the rewrite rules for both nginx and apache.
-```8. 设置你自己的webserver.下文Configuration 节描述了如何设置nginx和apache的rewrite规则.
+```
+8. 设置你自己的webserver.下文Configuration 节描述了如何设置nginx和apache的rewrite规则.
 
 Configuration
 =============
@@ -480,6 +481,7 @@ Configure Webserver Re-Write Rules
 
 XHGui prefers to have URL rewriting enabled, but will work without it.
 For Apache, you can do the following to enable URL rewriting:
+```
 XHGui通常开启URL rewriting,但不使用它进行工作. 对于Apache,你可以如下所示开启URL rewriting.
 
 1. Make sure that an .htaccess override is allowed and that AllowOverride
@@ -503,7 +505,8 @@ XHGui通常开启URL rewriting,但不使用它进行工作. 对于Apache,你可�
 3. XHGui comes with a `.htaccess` file to enable the remaining rewrite rules.
 
 For nginx and fast-cgi, you can the following snippet as a start:
-```对nginx和fast-cgi,你可以做下面配置:
+```
+对nginx和fast-cgi,你可以做下面配置:
 
 ```nginx
 server {
@@ -530,22 +533,27 @@ server {
 
 
 Configure XHGui Profiling Rate
-`配置XHGui Profiling采样率
+```
+配置XHGui Profiling采样率
 -------------------------------
 
 After installing XHGui, you may want to do change how frequently you
 profile the host application. The `profiler.enable` configuration option
 allows you to provide a callback function that specifies the requests that
 are profiled. By default, XHGui profiles 1 in 100 requests.
-`安装完XHGui,你可能想改变目标软件的性能优化数据的采样频率. `profiler.enable`配置选项允许你提供一个回调
+```
+安装完XHGui,你可能想改变目标软件的性能优化数据的采样频率. `profiler.enable`配置选项允许你提供一个回调
 函数用来做这件事,XHGui的默认采样率是1/100.
 
 The following example configures XHGui to only profile requests
 from a specific URL path:
-`下面的例子配置了XHGui仅仅用来从一个指定的URL上采样.
+```
+下面的例子配置了XHGui仅仅用来从一个指定的URL上采样.
 
 The following example configures XHGui to profile 1 in 100 requests,
 excluding requests with the `/blog` URL path:
+```
+下面的例子配置了XHGui采样为百分之一,不包括requests中包含`/blog`字样的URL path:
 
 ```php
 // In config/config.php
