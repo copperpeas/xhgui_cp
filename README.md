@@ -470,7 +470,7 @@ Installation
 
 8. Set up your webserver. The Configuration section below describes how
    to setup the rewrite rules for both nginx and apache.
-`8. 设置你自己的webserver.下文Configuration 节描述了如何设置nginx和apache的rewrite规则.
+```8. 设置你自己的webserver.下文Configuration 节描述了如何设置nginx和apache的rewrite规则.
 
 Configuration
 =============
@@ -503,7 +503,7 @@ XHGui通常开启URL rewriting,但不使用它进行工作. 对于Apache,你可�
 3. XHGui comes with a `.htaccess` file to enable the remaining rewrite rules.
 
 For nginx and fast-cgi, you can the following snippet as a start:
-`对nginx和fast-cgi,你可以做下面配置:
+```对nginx和fast-cgi,你可以做下面配置:
 
 ```nginx
 server {
