@@ -569,7 +569,8 @@ different applications have different requirements for how URLs map to
 logical blocks of code, the `profile.simple_url` configuration option
 allows you to provide specify the logic used to generate the simple URL.
 By default, all numeric values in the query string are removed.
-XHGui为每个profile collected生成'simple' URLs. 这些URLs生成URL view的底层数据.因为不同的应用有不同的请求.
+
+<br>XHGui为每个性能优化数据集(profile collected)生成'simple' URLs. 这些URLs生成URL view的底层数据.因为不同的应用有不同的请求.
 `profile.simple_url`配置选项允许你提供指定的逻辑用来生成特定的simple URL.所有的query string 中的数字值都默认省略.
 
 ```php
