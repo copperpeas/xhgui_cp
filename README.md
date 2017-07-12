@@ -571,7 +571,7 @@ return array(
 
 In contrast, the following example configured XHGui to profile *every*
 request:
-
+下面的例子配置了XHGui对'每一个' request进行采样:
 ```php
 // In config/config.php
 return array(
@@ -592,6 +592,8 @@ different applications have different requirements for how URLs map to
 logical blocks of code, the `profile.simple_url` configuration option
 allows you to provide specify the logic used to generate the simple URL.
 By default, all numeric values in the query string are removed.
+XHGui为每个profile collected生成'simple' URLs. 这些URLs生成URL view的底层数据.因为不同的应用有不同的请求.
+`profile.simple_url`配置选项允许你提供指定的逻辑用来生成特定的simple URL.所有的query string 中的数字值都默认省略.
 
 ```php
 // In config/config.php
@@ -605,6 +607,7 @@ return array(
 
 The URL argument is the `REQUEST_URI` or `argv` value.
 
+URL参数是`REQUEST_URI`或者 `argv`的值.
 
 Profile an Application or Site
 ==============================
@@ -616,6 +619,11 @@ with PHP's
 epend-file) directive. You can enable `auto_prepend_file` system-wide
 through `php.ini`. Alternatively, you can enable `auto_prepend_file` per
 virtual host.
+</br>
+最简单的profile an application的方式是用`external/header.php`文件.`external/header.php`被设计用来结合PHP的
+[auto_prepend_file](http://www.php.net/manual/en/ini.core.php#ini.auto-pr
+epend-file) 指令.你可以通过`php.ini`开启`auto_prepend_file`选项,也可以在每个virtual host中启动`auto_prepend_file`
+</br>
 
 With apache this would look like:
 
@@ -638,6 +646,7 @@ server {
 ```
 
 Profile a CLI Script
+<br>剖析一个CLI脚本
 ====================
 
 The simplest way to profile a CLI is to use
