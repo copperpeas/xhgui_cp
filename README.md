@@ -65,8 +65,7 @@ Installation
 
    ```
    $ mongo
-   > use xhprof
-   > db.results.ensureIndex( { 'meta.SERVER.REQUEST_TIME' : -1 } )
+   > use xhprof > db.results.ensureIndex( { 'meta.SERVER.REQUEST_TIME' : -1 } )
    > db.results.ensureIndex( { 'profile.main().wt' : -1 } )
    > db.results.ensureIndex( { 'profile.main().mu' : -1 } )
    > db.results.ensureIndex( { 'profile.main().cpu' : -1 } )
@@ -760,3 +759,4 @@ IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
 CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+==== test end ====
