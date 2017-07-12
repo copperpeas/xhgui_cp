@@ -570,7 +570,7 @@ logical blocks of code, the `profile.simple_url` configuration option
 allows you to provide specify the logic used to generate the simple URL.
 By default, all numeric values in the query string are removed.
 
-<br>XHGui为每个性能优化数据集(profile collected)生成'simple' URLs. 这些URLs生成URL view的底层数据.因为不同的应用有不同的请求.
+XHGui为每个性能优化数据集(profile collected)生成'simple' URLs. 这些URLs生成URL view的底层数据.因为不同的应用有不同的请求.
 `profile.simple_url`配置选项允许你提供指定的逻辑用来生成特定的simple URL.所有的query string 中的数字值都默认省略.
 
 ```php
@@ -583,11 +583,9 @@ return array(
 );
 ```
 
-The URL argument is the `REQUEST_URI` or `argv` value.
-
 URL参数是`REQUEST_URI`或者 `argv`的值.
 
-Profile an Application or Site
+分析(profile)一个应用程序(application)或者站点(site)
 ==============================
 
 The simplest way to profile an application is to use
